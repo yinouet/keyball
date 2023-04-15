@@ -72,7 +72,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 enum keyball_keycodes {
 #ifdef VIA_ENABLED
-    KBC_RST = USER00, // Keyball configuration: reset to default
+    KBC_RST = QK_USER_0, // Keyball configuration: reset to default
 #else
     KBC_RST = SAFE_RANGE, // Keyball configuration: reset to default
 #endif
@@ -93,6 +93,16 @@ enum keyball_keycodes {
     KEYBALL_SAFE_RANGE,
 };
 
+#define KBC_RST QK_USER_0
+#define KBC_SAV QK_USER_1
+#define CPI_I100 QK_USER_2
+#define CPI_D100 QK_USER_3
+#define CPI_I1K QK_USER_4
+#define CPI_D1K QK_USER_5
+#define SCRL_TO QK_USER_6
+#define SCRL_MO QK_USER_7
+#define SCRL_DVI QK_USER_8
+#define SCRL_DVD QK_USER_9
 
 
 typedef union {
